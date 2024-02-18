@@ -1,15 +1,6 @@
-var color = document.getElementById('colors');
-var swatch = document.getElementById('swatch');
-color.onclick = changeColors;
-
-function changeColors(e) {
-    console.log(e.target.textContent);
-    swatch.style.backgroundColor = e.target.textContent;
-}
-
 function makeMultiplicationTable(rows, columns) {
-    var tableContent;
-    tableContent += `<th> ${rows}x${columns} Multiplication Table </th>` 
+    var tableContent = "";
+    tableContent += `<h3 class = \"styled-text\"> ${rows}x${columns} Multiplication Table </h3>` 
     /* I also learned about "template literals" which get rid of a lot of plus signs by using ` string text ${variableName}.` 
     instead of "string text " + variableName + "."*/
     for (var y = 1; y <= rows; y++ ) {
