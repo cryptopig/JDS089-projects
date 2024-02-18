@@ -9,7 +9,7 @@ h3 {
   }
 
 
-.table {
+.mtable {
     width: 100%;
     font-family: Arial, sans-serif;
     font-size: 14px;
@@ -20,15 +20,20 @@ h3 {
   
   
   
-  .table tr {
+  .mtable tr {
     background-color: #dcdfe2;
   }
   
-  .table td {
+  .mtable td {
     padding: 10px;
     border-bottom: 1px solid #dcdfe2;
+    
   }
   
-  .table tr:nth-child(even) {
+  .mtable tr:nth-child(even) {
     background-color: #b3b4ba;
+  }
+
+  table td:hover {
+        background-color: #cbc5e6;
   }
