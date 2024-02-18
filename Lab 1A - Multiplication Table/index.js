@@ -10,7 +10,8 @@ function changeColors(e) {
 function makeMultiplicationTable(rows, columns) {
     var tableContent;
     tableContent += `<th> ${rows}x${columns} Multiplication Table </th>` 
-    // I also learned about "template literals" which get rid of a lot of plus signs by using ``.
+    /* I also learned about "template literals" which get rid of a lot of plus signs by using ` string text ${variableName}.` 
+    instead of "string text " + variableName + "."*/
     for (var y = 1; y <= rows; y++ ) {
         tableContent += "<tr>";
         for (var x = 1; x <= columns; x++) {
