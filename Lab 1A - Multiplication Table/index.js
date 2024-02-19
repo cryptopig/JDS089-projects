@@ -1,7 +1,13 @@
-var multiplicationTable = makeMultiplicationTable(12, 12);
 
-window.onload(document.getElementById('mtable').innerHTML = multiplicationTable); // window.onload makes it slightly faster
+get('submitButton').onclick = function() {
+    var rows = parseInt(get('rowinput').value);
+    var columns = parseInt(get('columninput').value);
+    var multiplicationTable = makeMultiplicationTable(rows, columns);
+    get('mtable').innerHTML = multiplicationTable;
 
+}
+
+ // window.onload makes it slightly faster
 function makeMultiplicationTable(rows, columns) {
     var tableContent = "";
     tableContent += `<h3 class = \"styled-text\"> ${rows}x${columns} Multiplication Table </h3>` 
@@ -18,5 +24,5 @@ function makeMultiplicationTable(rows, columns) {
 }
 
 function get(id) {
-    document.getElementById(id);
+    return document.getElementById(id);
 }
