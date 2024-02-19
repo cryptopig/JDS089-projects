@@ -3,18 +3,21 @@ h1 { /* I used .styled-text h1 instead of h1 because I wanted to experiment with
 }
 
 h3 { 
-    background-color: #c4d2ee;
+    background-color: #d2d7c5;
     font-weight: bold;
     text-align: center;
   }
 
+body {
+    background-color: rgb(240, 240, 234);
+}
 
 .mtable {
     width: 100%;
     font-family: Arial, sans-serif;
     font-size: 14px;
     text-align: center;
-    border-color: #a195d6; /* I used the vscode color select wheel to find these hex codes. */
+    border-color: #c7c3d9; /* I used the vscode color select wheel to find these hex codes. */
     table-layout: fixed; /* This line is to fix an issue I was having with the first column of the table being too wide. */
   }
   
@@ -35,5 +38,5 @@ h3 {
   }
 
   table td:hover {
-        background-color: #cbc5e6;
+        background-color: #d8e094;
   }
