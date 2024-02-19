@@ -7,6 +7,12 @@ get('submitButton').onclick = function() {
 
 }
 
+window.onload = function() {
+    var multiplicationTable = makeMultiplicationTable(12, 12);
+    get('mtable').innerHTML = multiplicationTable;
+
+}
+
  // window.onload makes it slightly faster
 function makeMultiplicationTable(rows, columns) {
     var tableContent = "";
