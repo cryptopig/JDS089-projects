@@ -1,3 +1,30 @@
-.styled-h1 h1 {
-    font-family: Arial, Helvetica, sans-serif;
+@font-face
+{
+    font-family: RedHands;
+    src: url("fonts/KGRedHands.ttf")
+}
+
+h1 {
+    font-family: "RedHands";
+    text-align: center;
+}
+h3 {
+    font-family: "RedHands";
+}
+p {
+    font-family: Arial;
+}
+body {
+    background-color: beige;
+}
+
+.fortunediv {
+    margin: 15px;
+}
+button {
+    margin: 15px;
+    font-family: "RedHands";
+}
+button:hover {
+    background-color: lightgoldenrodyellow;
 }
