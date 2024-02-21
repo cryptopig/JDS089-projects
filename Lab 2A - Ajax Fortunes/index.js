@@ -7,7 +7,7 @@ generateFortune();
 function generateFortune() {
     xhttp.onreadystatechange = processResponse;
 
-    xhttp.open('GET', 'http://www.mixed-up.com/mc/api/fortunepb.php')
+    xhttp.open('GET', 'http://www.mixed-up.com/mc/api/fortunepb.php');
 
     xhttp.send();
 }
