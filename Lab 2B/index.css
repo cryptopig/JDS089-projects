@@ -1,0 +1,57 @@
+/* index.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c0dded;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+.monarchRequest {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+.monarchRequest h3 {
+    color: #555;
+}
+
+.monarchRequest label {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.monarchRequest  {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+/* I found out that you can use hashtags to look for IDs in CSS. */
+#submitButton {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    margin-left: 710px;
+    max-width: 500px;
+}
+
+#submitButton:hover {
+    background-color: #0056b3;
+}
+
+#monarch {
+    display: block;
+}

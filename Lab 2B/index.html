@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel = "stylesheet" href = "styles.css">
+        <link rel = "stylesheet" href = "index.css">
 
 
     <!--
@@ -21,7 +21,20 @@
 
 
         <div class = "monarchRequest">
-            <h3>Fill this out: </h3> <p id = "monarch"></p>
+            <h3>Choose your Monarch: </h3>
+
+            <label>Name of the Monarch, their house, or their nickname:</label>
+            <input id = 'nameInput' type="text"></input> <br> <br>
+
+            <label>Years they were in office, born, left office, etc.:</label>
+            <input id = 'yearInput' type="text"></input> <br> <br>
+
+            <label>Format (JSON, XML, or text):</label>
+            <input id = 'formatInput' type="text"></input>
+
+
+
+            <p id = "monarch">default value</p>
         </div>
 
         <button id = "submitButton">Submit</button>
