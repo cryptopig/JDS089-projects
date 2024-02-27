@@ -1,0 +1,30 @@
+{
+    "name": "Vedant Garg",
+    "school": "Adrian Wilcox High School",
+    "schoolCity": "Santa Clara",
+    "grade": "sophomore",
+    "someClasses": [
+        {
+            "courseName": "AP Computer Science Principles",
+            "grade": "A"
+        },
+        {
+            "courseName": "AP European History",
+            "grade": "A"
+        }
+    ],
+
+    "hobbies" : [
+            "Jazz Piano",
+            "Computer Science",
+            "Electronics"
+    ],
+
+    "favoriteFood" : [
+        {
+            "foodName": "Donuts",
+            "foodPrice": 1
+        }
+    ]
+
+}

@@ -24,7 +24,27 @@ function getMonarch(name, year, format) {
 
 function processResponse() {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
-        document.getElementById('monarch').textContent = xhttp.responseText;
+        var jsonData = JSON.parse(xhttp.responseText);
+        var tableHtml = '<table>';
+
+        // headers
+        tableHtml += '<tr>';
+        for (var key in jsonData[0]) {
+            tableHtml += '<th>' + key + '</th>';
+        }
+
+        // rows
+        tableHtml += '</tr>';
+
+        for (var i = 0; i < jsonData.length; i++) {
+            tableHtml += '<tr>';
+            for (var key in jsonData[i]) {
+                tableHtml += '<td>' + jsonData[i][key] + '</td>';
+            }
+            tableHtml += '</tr>';
+        }
+        tableHtml += '</table>';
+        document.getElementById('monarch').innerHTML = tableHtml;
     }
 }
 
