@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Table Display</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <table id="json-table">
+    
+    </table>
+
+    <script>
+        let xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status == 200) {
+                let data = JSON.parse(xhr.responseText);
+                console.log(data);
+                
+                // make table
+                var tableText = "";
+                console.log('t1');
+                tableText += `<tr><td>Name</td> <td>${data.name}</td></tr>`;
+                tableText += `<tr><td>School</td></tr> <td>${data.school}</td>`;
+                tableText += `<tr><td>School City</td></tr> <td>${data.schoolCity}</td>`;
+                tableText += `<tr><td>Grade</td></tr> <td>${data.grade}</td>`;
+                tableText += `<tr><td>Some Classes</td> <td>`;
+                for (var i = 0; i<data.someClasses.length; i++) {
+                    tableText += `${data.someClasses[i].courseName}: ${data.someClasses[i].grade}<br />`;
+                    console.log(`t${i}`);
+                    console.log(tableText);
+                    
+                }
+                tableText += "</td></tr>"
+                
+                document.getElementById('json-table').innerHTML = tableText;
+            }
+        };
+        xhr.open("GET", "http://localhost:8000/Garg_Vedant_Lab3B.json");
+        xhr.send();
+    </script>
+</body>
+</html>
