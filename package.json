@@ -1,0 +1,17 @@
+{
+  "name": "jds089-projects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cryptopig/JDS089-projects.git"
+  },
+  "private": true,
+  "dependencies": {
+    "mongodb": "^6.5.0"
+  }
+}
