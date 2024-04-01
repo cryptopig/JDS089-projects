@@ -43,46 +43,43 @@ function textToJson(data, search, sortField) {
         }
 
         const fields = lines[i].split("|");
-        const stateObject = {};
-        stateObject.abbreviation = fields[0];
-        stateObject.state = fields[1];
-        stateObject. capital = fields[2];
-        stateObject.largestCity = fields[3];
-        stateObject.yearAdmitted = fields[4];
-        stateObject.representatives = fields[5];
-        stateObject.population = fields[7];
-        objects.push (stateObject);
+        const foodObj = {};
+        foodObj.foodName = fields[0];
+        foodObj.price = fields[1];
+        foodObj. calories = fields[2];
+        objects.push (foodObj);
 
-        if (sortField == "population" || sortField == "yearAdmitted" || sortField == "representatives") {
-            console.log("sorting by population.");
-            objects.sort(cmpNumeric);
+        if (sortField == "foodName") {
+            console.log("sorting by food name.");
+            objects.sort(cmpString);
         }
 
-        else if (sortField == "abbreviation" || sortField == "state" || sortField == "capital" || sortField == "largestCity") {
-            objects.sort(cmpString);
+        else if (sortField == "price" || sortField == "calories") {
+            objects.sort(cmpNumeric);
         }
 
         return JSON.stringify(objects, null, 2);
 
     }
-}
-function cmpString(a, b) {
-    if ((a[sortField]) < (b[sortField])) {
-        return -1;
-    }
-    else if ((a[sortField]) > (b[sortField])) {
-        return 1
-    }
 
-    return 0
-}
-function cmpNumeric(a, b) {
-    if (parseInt(a[sortField]) < parseInt(b[sortField])) {
-        return -1;
-    }
-    else if (parseInt(a[sortField]) > parseInt(b[sortField])) {
-        return 1
-    }
+    function cmpString(a, b) {
+        if ((a[sortField]) < (b[sortField])) {
+            return -1;
+        }
+        else if ((a[sortField]) > (b[sortField])) {
+            return 1
+        }
 
-    return 0
+        return 0
+    }
+    function cmpNumeric(a, b) {
+        if (parseInt(a[sortField]) < parseInt(b[sortField])) {
+            return -1;
+        }
+        else if (parseInt(a[sortField]) > parseInt(b[sortField])) {
+            return 1
+        }
+
+        return 0
+    }
 }

@@ -1,0 +1,10 @@
+foodName|price|calories
+Apple|1.25|95
+Banana|0.75|105
+Orange|1.00|62
+Grapes|2.50|62
+Strawberries|3.00|49
+Blueberries|4.50|57
+Mango|2.00|202
+Pineapple|3.50|82
+Watermelon|5.00|46
