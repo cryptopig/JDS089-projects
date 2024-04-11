@@ -1,0 +1,44 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #b3b4ba;
+
+}
+h1, h2, p {
+    margin: 100px;
+    padding: 100px;
+}
+header {
+    background-color: #b4dec7;
+    color: #463d3d;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+main {
+    padding: 20px;
+    font-family: 'Arial', serif;
+}
+
+h2 {
+    color: #333;
+    font-size: 20px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #b4dec7;
+    color: #463d3d;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
